@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  #  redis:
+  #    cluster:
+  #      expire-seconds: 120
+  #      command-timeout: 5000
+  #      nodes:
+  #  namenode22:6379,datanode23:6379,datanode24:6379,datanode25:6379,datanode26:6379,datanode27:6379
+  application:
+    #定义应用名称，即服务名称
+    name: consumer-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7072/eureka
