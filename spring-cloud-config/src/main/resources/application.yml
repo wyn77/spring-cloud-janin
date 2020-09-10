@@ -1,0 +1,26 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # 配置git仓库地址
+          uri: https://github.com/wyn77/spring-cloud-config.git
+          # 访问git仓库的用户名
+          username:
+          # 访问git仓库的用户密码 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+          password:
+          #支持带{application}和{profile}（{label}如果需要）占位符的搜索路径
+          search-paths: cloud-config,demo*    #配置文件目录
+      # 配置仓库的分支,可不配
+      label: master
+eureka:
+  client:
+    service-url:
+      #defaultZone 这个是不会提示的，此处需要自己写
+      #实际上属性应该是service-url,这个属性是个map（key-value）格式；当key是defaultZone的时候才能被解析；所以这里没有提示，
+      #但是自己还需要写一个defaultZone；
+      defaultZone: http://localhost:7072/eureka
