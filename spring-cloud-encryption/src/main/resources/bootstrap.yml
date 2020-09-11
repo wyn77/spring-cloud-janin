@@ -1,5 +1,6 @@
 # 加密 http://localhsot:8083/encrypt  post请求
 # 解密 http://localhsot:8083/decrypt
+# 解密 http://localhsot:8083/refresh 动态刷新
 encrypt:
   key: test
 

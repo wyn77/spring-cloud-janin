@@ -12,6 +12,7 @@
     <artifactId>spring-cloud-janin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-janin</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>

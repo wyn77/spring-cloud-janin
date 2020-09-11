@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>spring-cloud-eureka</artifactId>
+    <artifactId>spring-cloud-encryption</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-eureka</name>
+    <name>spring-cloud-encryption</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
     </dependencies>
 
